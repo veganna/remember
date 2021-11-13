@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $(document).scrollTop($(document).height());
+    document.getElementById('scroll_to').scrollIntoView();
 });

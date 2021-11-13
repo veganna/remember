@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/product_card.css' %}">
     <link rel="stylesheet" href="{% static 'css/login_modal.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">  {% block css %}{% endblock css %}
 </head>
@@ -136,8 +136,18 @@
             <p><a href="{% url 'Account:register' %}" style="text-align: center; color: #69BD28; text-decocation: none;">Create An Account</a></p>
         </form>
     </div>
+    <script>
+        var giftofspeed = document.createElement('link');
+    giftofspeed.rel = 'stylesheet';
+    giftofspeed.href = "{% static 'css/font_awesome.css' %}";
+    giftofspeed.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+    </script>
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/loginpopup.js' %}"></script>
+   
 {% block script %}{% endblock script %}
 
 
